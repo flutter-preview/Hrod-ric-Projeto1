@@ -22,7 +22,7 @@ class _Pagina1State extends State<Pagina1> {
         child:Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('images/1.gif'),
+            Image.asset('lib/assets/images/1.gif'),
             ],
         ),
       ),

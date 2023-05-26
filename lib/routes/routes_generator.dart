@@ -6,7 +6,7 @@ import 'package:projeto1/pages/pagina2.dart';
 import 'package:projeto1/shared/constants.dart';
 
 class RoutesGenerator {
-  static const homePage = '/home';
+  static const homePage = '/';
   static const addPage = '/clique/add';
   static const pagina1 = '/pagina1';
   static const pagina2 = '/pagina2';
