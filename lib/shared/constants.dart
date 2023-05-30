@@ -1,4 +1,6 @@
 abstract class AppConstants {
-  static const PageNotFound = 'Page not found';
+  static const pageNotFound = 'Page not found';
   static const newPage = 'Page not found';
+  static const clickNewPage = 'ClickNewPage';
+  static const welcome = 'Seja bem-vindo!';
 }

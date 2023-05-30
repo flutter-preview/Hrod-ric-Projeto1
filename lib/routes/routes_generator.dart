@@ -23,7 +23,7 @@ class RoutesGenerator {
       case pagina2:
         return _goPage(const Pagina2(title: 'Pagina 2'));
       default:
-      throw const FormatException(AppConstants.PageNotFound);
+      throw const FormatException(AppConstants.pageNotFound);
     }
   }
   static _goPage(Widget page) => MaterialPageRoute(
