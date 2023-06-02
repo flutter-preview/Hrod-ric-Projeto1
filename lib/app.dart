@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var myHome = const MyHomePage(title:'Flutter Demo Home Page');
+    var myHome = const MyHomePage(title:'Manjericao');
     //var Pagina01 = const Pagina1(title:'Page1');
     //var Pagina02 = const Pagina2(title:'Page2');
     return MaterialApp(

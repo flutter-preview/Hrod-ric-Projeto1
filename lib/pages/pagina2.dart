@@ -28,7 +28,7 @@ class _Pagina2State extends State<Pagina2> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('lib/assets/images/$_imagem.gif'),
+            Image.asset('images/$_imagem.gif'),
             ],
         ),
       ),

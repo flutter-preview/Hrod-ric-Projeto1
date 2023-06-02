@@ -18,12 +18,41 @@ class _Pagina1State extends State<Pagina1> {
       appBar: AppBar(
         title: Text(widget._title),
       ),
-      body: Center(
-        child:Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image.asset('lib/assets/images/1.gif'),
-            ],
+      body: Align(
+        alignment: Alignment.topLeft,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child:ListView(
+            children:[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Image.asset('images/1.gif', width: 320,),
+                  Image.asset('images/4.gif', width: 320,),
+                  Image.asset('images/3.gif', width: 320,),
+                  ],
+                ),
+                Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Image.asset('images/3.gif', width: 320,),
+                  Image.asset('images/1.gif', width: 320,),
+                  Image.asset('images/4.gif', width: 320,),
+                  ],
+                ),
+                Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Image.asset('images/4.gif', width: 320,),
+                  Image.asset('images/3.gif', width: 320,),
+                  Image.asset('images/1.gif', width: 320,),
+                  ],
+                )
+              ],
+            ),
         ),
       ),
       floatingActionButton: ElevatedButton(

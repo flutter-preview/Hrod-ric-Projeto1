@@ -75,8 +75,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
       ),
       appBar: AppBar(
-        title: Center(
-          child: Image.asset('lib/assets/images/p3.png'),
+        title: Align(
+          alignment: Alignment.center,
+          child: Image.asset('images/1.jpg',
+          width:64),
         ),
       ),
       body: Align(
