@@ -29,12 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter+=28751;
+      _counter+=1;
     });
   }
 
@@ -64,12 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 leading: const Icon(Icons.calendar_month),
                 title: const Text('Calendario'),
-                onTap: (){},
+                onTap: (){Navigator.of(context).pushNamed(RoutesGenerator.calendarPage);},
               ),
               ListTile(
                 leading: const Icon(Icons.toc_outlined),
                 title: const Text('Sobre'),
-                onTap: (){},
+                onTap: (){Navigator.of(context).pushNamed(RoutesGenerator.aboutPage);},
               )
             ],
           ),
@@ -102,6 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
+              _incrementCounter();
               Navigator.of(context).pushNamed(RoutesGenerator.pagina1);
             },
         tooltip: 'Increment',
