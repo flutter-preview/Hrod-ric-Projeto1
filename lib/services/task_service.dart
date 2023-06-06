@@ -1,21 +1,22 @@
+import 'package:projeto1/services/category_service.dart';
+
 import '../models/category_model.dart';
 import '../models/task_model.dart';
 
 class TaskService {
+  final CategoryService _categoryService;
+  TaskService({required CategoryService categoryService}): _categoryService = categoryService;
+
   /// Classe responsavel por interagir com a fonte dos dados
   List<Task> getTasks(){
     return List.generate(
       4,
       (index) {
-        final categorias = [
-          Category(name: 'Imposto', color: 0xFFFF0000),
-          Category(name: 'Entrada', color: 0xFF5cc6ba),
-          Category(name: 'Pagamento', color: 0xFF6680EC),
-        ];
+        final categories = _categoryService;
         return Task(
         title: 'Texto $index',
         description: 'Falta ${index * 2} dias',
-        category: categorias[index % categorias.length],
+        category: categories[index % categories.length],
         finished: index.isEven,
         );
       }

@@ -8,15 +8,6 @@ import '../routes/routes_generator.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required String title}): _title = title;
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String _title;
   get name => _title;
 
@@ -42,7 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: AppStyle.primaryColor
+                color: AppStyle.primaryColor,
+                image: DecorationImage(
+                  image: NetworkImage(
+                    'https://picsum.photos/seed/picsum/200/300'
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
               child: SizedBox.shrink(),
               ),
