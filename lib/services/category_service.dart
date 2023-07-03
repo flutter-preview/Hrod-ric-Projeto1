@@ -2,6 +2,7 @@ import '../models/category_model.dart';
 
 class CategoryService {
 
+
   List getCategories(){
     return [
           Category(name: 'Imposto', color: 0xFFFF0000),
